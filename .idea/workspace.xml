@@ -97,11 +97,11 @@
         <entry file="file://$PROJECT_DIR$/app/Resources/views/default/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.057840616">
-              <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+              <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
               <folding>
                 <element signature="e#12#26#0#Twig" expanded="true" />
-                <element signature="e#224#271#0#Twig" expanded="true" />
-                <element signature="e#3103#3150#0#Twig" expanded="true" />
+                <element signature="e#236#283#0#Twig" expanded="true" />
+                <element signature="e#3115#3162#0#Twig" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -452,12 +452,12 @@
       <created>1519073889020</created>
       <option name="number" value="Default" />
       <updated>1519073889020</updated>
-      <workItem from="1519073900892" duration="2028000" />
+      <workItem from="1519073900892" duration="2127000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2028000" />
+    <option name="totallyTimeSpent" value="2127000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -586,11 +586,11 @@
     <entry file="file://$PROJECT_DIR$/app/Resources/views/default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.057840616">
-          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+          <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
           <folding>
             <element signature="e#12#26#0#Twig" expanded="true" />
-            <element signature="e#224#271#0#Twig" expanded="true" />
-            <element signature="e#3103#3150#0#Twig" expanded="true" />
+            <element signature="e#236#283#0#Twig" expanded="true" />
+            <element signature="e#3115#3162#0#Twig" expanded="true" />
           </folding>
         </state>
       </provider>
