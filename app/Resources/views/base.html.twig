@@ -5,8 +5,29 @@
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     </head>
     <body>
+
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+
+
+                    {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                        <li><a href="{{ path('security_logout') }}">Logout</a></li>
+                        {#{% endif %}#}
+                    {% else %}
+                        <li><a href="{{ path('security_login') }}">Login</a></li>
+                        <li><a href="{{ path('security_register') }}">Register</a></li>
+                    {% endif %}
+                    {#<li><a href="{{ path('create_item') }}">Create Item</a></li>#}
+                    {#<li><a href="{{ path('print_items') }}">All Item</a></li>#}
+                </ul>
+            </div>
+        </nav>
+
+
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
     </body>

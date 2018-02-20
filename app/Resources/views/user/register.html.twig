@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+{#{% if error %}#}
+    {#<div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>#}
+{#{% endif %}#}
+{#{% if error %}#}
+    {#<div>{{ error }}</div>#}
+{#{% endif %}#}
+{% for message in app.session.flashBag.get("error") %}
+    <div class="alert alert-danger"><strong>{{ message }}</strong></div>
+{% endfor %}
+
+<form name="register" action="{{ path('security_register') }}" method="POST">
+    Username: <input type="text" name="user[username]"> <br>
+    Password: <input type="password" name="user[password]"> <br>
+    <input type="hidden" name="_csrf_token" value="{{ csrf_token('register') }}">
+    <input type="submit" value="Регистрация">
+</form>
+
+    {#{{ form_start(form) }}#}
+        {#{{ form_row(form.username) }}#}
+        {#{{ form_row(form.password) }}#}
+
+        {#<button type="submit">Register!</button>#}
+    {#{{ form_end(form) }}#}
+
+{% endblock %}
